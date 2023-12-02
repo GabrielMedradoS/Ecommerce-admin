@@ -9,7 +9,7 @@
     <a href="">
         <img src="https://img.shields.io/badge/E-commerce-GMS-030712?&labelColor=262626"></img>
     </a>
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/Upload.ai?color=030712&labelColor=262626">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/Ecommerce-GMS?color=030712&labelColor=262626">
     <a href="">
         <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=030712&labelColor=262626">
     </a>
@@ -44,7 +44,42 @@
     <summary>Dependencies</summary>
 
 ```json
-
+{
+  "name": "e-commerce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.27.2",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
 ```
 
 </details>
@@ -54,7 +89,7 @@
 $ git clone
 
 # Access the project folder at the command prompt
-$ cd
+$ cd e-commerce
 
 # Install the dependencies
 $ npm install
