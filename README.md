@@ -120,6 +120,7 @@ $ npm run dev
 - [Tailwind | documentation](https://tailwindcss.com/docs/installation/using-postcss)
 - [Clerk Authentication](https://clerk.com/)
 - [Zustand | documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- [Zod | documentation](https://zod.dev/)
 
 ## Licença ⚖️
 
