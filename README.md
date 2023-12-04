@@ -56,16 +56,23 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.27.2",
+    "@hookform/resolvers": "^3.3.2",
+    "@prisma/client": "^5.6.0",
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
+    "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
@@ -76,6 +83,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "postcss": "^8",
+    "prisma": "^5.6.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
@@ -122,7 +130,10 @@ $ npm run dev
 - [Zustand | documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
 - [Zod | documentation](https://zod.dev/)
 - [Prisma.io | documentation](https://www.prisma.io/docs/getting-started/quickstart)
-- [PlanetScale | documentation]()
+- [PlanetScale | documentation](https://planetscale.com/)
+- [React Hot Toast](https://react-hot-toast.com/)
+- [Axios | documentation](https://axios-http.com/ptbr/docs/intro)
+- [React Hook Form](https://www.react-hook-form.com/get-started)
 
 ## Licença ⚖️
 
