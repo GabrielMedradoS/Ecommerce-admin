@@ -121,6 +121,8 @@ $ npm run dev
 - [Clerk Authentication](https://clerk.com/)
 - [Zustand | documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
 - [Zod | documentation](https://zod.dev/)
+- [Prisma.io | documentation](https://www.prisma.io/docs/getting-started/quickstart)
+- [PlanetScale | documentation]()
 
 ## Licença ⚖️
 
