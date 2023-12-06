@@ -32,13 +32,11 @@
 
 ## Projeto 💻
 
--
+- O projeto consiste na criação de um E-commerce usando Nextjs Shadcn/ui Tailwind Prisma Clerk
 
 ## Rodar o projeto 🚴🏻‍♂️
 
 #### On your machine:
-
-##### Front-end
 
 <details>
     <summary>Dependencies</summary>
@@ -60,10 +58,13 @@
     "@prisma/client": "^5.6.0",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-popover": "^1.0.7",
+    "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "cmdk": "^0.2.0",
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
     "react": "^18",
