@@ -135,6 +135,8 @@ $ npm run dev
 - [React Hot Toast](https://react-hot-toast.com/)
 - [Axios | documentation](https://axios-http.com/ptbr/docs/intro)
 - [React Hook Form](https://www.react-hook-form.com/get-started)
+- [Next Cloudinary](https://next.cloudinary.dev/installation)
+- [Cloudinary | documentation](https://cloudinary.com/)
 
 ## Licença ⚖️
 
