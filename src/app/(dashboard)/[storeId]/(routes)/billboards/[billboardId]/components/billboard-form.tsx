@@ -22,7 +22,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { AlertModel } from "@/components/modals/alert-modal";
+import { AlertModal } from "@/components/modals/alert-modal";
 import ImageUpload from "@/components/ui/image-upload";
 
 const formSchema = z.object({
@@ -84,9 +84,11 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
   const onDelete = async () => {
     try {
       setLoading(true);
-      await axios.delete(`/api/${params.storeId}/${params.billboardId}`);
+      await axios.delete(
+        `/api/${params.storeId}/billboards/${params.billboardId}`
+      );
+      router.push(`/${params.storeId}/billboards`);
       router.refresh();
-      router.push("/");
       toast.success("Billboard deleted.");
     } catch (error) {
       toast.error(
@@ -100,7 +102,7 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
 
   return (
     <>
-      <AlertModel
+      <AlertModal
         isOpen={open}
         onClose={() => setOpen(false)}
         onConfirm={onDelete}
@@ -168,8 +170,6 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
           </Button>
         </form>
       </Form>
-
-      <Separator />
     </>
   );
 };
