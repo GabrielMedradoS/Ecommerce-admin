@@ -137,6 +137,7 @@ $ npm run dev
 - [React Hook Form](https://www.react-hook-form.com/get-started)
 - [Next Cloudinary](https://next.cloudinary.dev/installation)
 - [Cloudinary | documentation](https://cloudinary.com/)
+- [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
 
 ## Licença ⚖️
 
