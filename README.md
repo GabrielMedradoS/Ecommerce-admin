@@ -1,4 +1,4 @@
-## Ecommerce-GMS
+## Ecommerce-admin
 
 <p align='center'>
 <b height="50%" width="50%"></b>
@@ -6,9 +6,9 @@
 
 <p align="center">
     <img alt="Platform" src="https://img.shields.io/static/v1?label=Platform&message=PC&color=030712&labelColor=262626">
-    <img alt="project name" src="https://img.shields.io/badge/Ecommerce-GMS-030712?&labelColor=262626"></img>    
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/Ecommerce-GMS?color=030712&labelColor=262626">
-    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/gabrielmedrados/ecommerce-gms?&color=030712&labelColor=262626">    
+    <img alt="project name" src="https://img.shields.io/badge/Ecommerce-admin-030712?&labelColor=262626"></img>    
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/Ecommerce-admin?color=030712&labelColor=262626">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/gabrielmedrados/ecommerce-admin?&color=030712&labelColor=262626">    
     <a href="">
         <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=030712&labelColor=262626">
     </a>
