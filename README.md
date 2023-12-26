@@ -41,6 +41,7 @@ O projeto de **Ecommerce-admin** possui aplicação simples e prática para gere
 ## ✨ Features
 
 - [x] Autenticaçao com Clerk;
+- [x] Upload de imagens usando Cloudnary;
 - [x] É possivel criar, deletar, atualizar os models de: Quadros, Categorias, Tamanhos, Cores, Produtos e itens do pedido para a loja;
 - [x] Disponibilidade e exibiçao das apis dos models para site externos;
 - [x] Metodos de requisição HTTP: POST, GET, PATCH, DELETE
