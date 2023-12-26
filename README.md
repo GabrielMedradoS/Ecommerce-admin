@@ -1,4 +1,4 @@
-## Ecommerce-admin
+### Ecommerce-admin
 
 <p align='center'>
 <b height="50%" width="50%"></b>
@@ -15,13 +15,17 @@
 </p>
 
 <p align="center">
-    <a href="#projeto-">Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#tecnologias-">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#layout-">Layout</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#licença-%EF%B8%8F">Licença</a>
+    <a href="#-layout">Layout</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-objetivo">Objetivo</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-features">Features</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-demonstração">Demonstração</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-documentation">Documentation</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="licença">License</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-autor">Autor</a> 
 </p>
 
-### Layout 🚧
+## 🚧 Layout 
 
 #### Screenshot:
 
@@ -29,19 +33,105 @@
 🚧 Under construction 🚧
 </div>
 
-#### Demonstração:
+## 🎯 Objetivo
+
+O objetivo é a criaçao de um site de ecommerce para **administradores** onde pode ser possivel gerenciar todas as apis do site, isso inclui a criaçao, deleçao, visualizaçao, arquivamento e disponibilidade. 
+
+O projeto de **Ecommerce-admin** possui aplicação simples e prática para gerenciar todas as apis que incluem Stores(Lojas), Billboards(Quadros), Category(Categoria), Size(Tamanho), Color(Cor), Product(Produto), Image(Imagem), Order(Pedido), OrderItem(Item do pedido). 
+
+## ✨ Features
+
+- [x] Autenticaçao com Clerk;
+- [x] É possivel criar, deletar, atualizar os models de: Quadros, Categorias, Tamanhos, Cores, Produtos e itens do pedido para a loja;
+- [x] Disponibilidade e exibiçao das apis dos models para site externos;
+- [x] Metodos de requisição HTTP: POST, GET, PATCH, DELETE
+
+## 💻 Demonstração:
 
 <div align='center'>
 🚧 Under construction 🚧
 </div>
 
-## Projeto 💻
+## 🚴🏻‍♂️ Rodar o projeto 
 
-- O projeto consiste na criação de um E-commerce usando Nextjs Shadcn/ui Tailwind Prisma Clerk
+Para baixar o código-fonte do projeto em sua máquina, primeiramente terá que ter instalado o [**Git**](https://git-scm.com/).
+Com o Git instalado, em seu terminal execute o seguinte comando:
 
-## Rodar o projeto 🚴🏻‍♂️
+```bash
+git clone https://github.com/GabrielMedradoS/Ecommerce-admin.git
+```
 
-#### On your machine:
+Para instalar as dependências e executar o projeto terá que ter instalado em sua máquina o [**node.js**](https://nodejs.org/en/), que vem acompanhado do npm.
+
+> Nesse projeto foi utilizado o [**pnpm**](https://pnpm.io/), que busca economizar espaço em disco e acelerar a instalação de pacotes devido à sua abordagem de armazenamento de dependências compartilhado.
+
+Instale as dependências usando **pnpm** ou **npm**:
+
+```bash
+# pnpm
+pnpm install
+
+# npm
+npm install
+```
+
+Crie o arquivo .env com as variáveis de ambiente necessárias:
+
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="Next Clerk Key"
+CLERK_SECRET_KEY="Clerk Key"
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+
+DATABASE_URL="Seu Banco de dados"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="Cloudnary Key"
+```
+
+Rode o comando a seguir para gerar o client do Prisma:
+
+```bash
+# pnpm
+pnpm prisma generate
+
+# npm
+npm prisma generate
+```
+
+Execute as migrations do banco de dados:
+
+```bash
+# pnpm
+pnpm prisma migrate dev
+
+# npm
+npm prisma migrate dev
+```
+
+Execute o projeto:
+
+```bash
+# pnpm
+pnpm run dev
+
+# npm
+npm run dev
+```
+
+O servidor estará disponível em http://localhost:3000.
+
+## 🛠 Tecnologias 
+
+<div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" height="30" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+  alt="typescript" height="30" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" height="30" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
+</div>
+
+## 📜 documentation 
 
 <details>
     <summary>Dependencies</summary>
@@ -98,37 +188,6 @@
 
 </details>
 
-```bash
-# Clone the repository
-$ git clone
-
-# Access the project folder at the command prompt
-$ cd e-commerce
-
-# Install the dependencies
-$ npm install
-
-# Run the script "start"
-$ npm run dev
-
-# The project will start at the door: 5173 - access http://localhost:3000
-```
-
-## Tecnologias 🛠
-
-<div>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"  height="30" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg" alt="css3"  height="30" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" height="30" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" height="30" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-  alt="typescript" height="30" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" height="30" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
-</div>
-
-#### documentation 📜
-
 - [Next.js 13 | documentation](https://nextjs.org/docs)
 - [Shadcn/ui | documentation](https://ui.shadcn.com/docs/installation/vite)
 - [Tailwind | documentation](https://tailwindcss.com/docs/installation/using-postcss)
@@ -144,11 +203,11 @@ $ npm run dev
 - [Cloudinary | documentation](https://cloudinary.com/)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
 
-## Licença ⚖️
+## ⚖️ License 
 
 This project is under the MIT license. See the archive [LICENSE]() for more details.
 
-## Autor ✍🏾
+## ✍🏾 Autor
 
 | <a href="https://github.com/gabrielmedrados/"><img src="https://user-images.githubusercontent.com/73303001/126536001-655e3cbd-facd-4de1-992f-b8d9d3656ace.jpg" width="100" alt="perfil"/><br>
 | :-------------------------: |
