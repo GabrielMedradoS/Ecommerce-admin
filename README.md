@@ -205,7 +205,7 @@ O servidor estará disponível em http://localhost:3000.
 
 ## ⚖️ License 
 
-This project is under the MIT license. See the archive [LICENSE]() for more details.
+This project is under the MIT license. See the archive [LICENSE](https://github.com/GabrielMedradoS/Ecommerce-admin/blob/master/LICENSE) for more details.
 
 ## ✍🏾 Autor
 
