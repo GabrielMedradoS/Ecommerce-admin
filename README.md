@@ -24,7 +24,7 @@
     <a href="#-autor">Autor</a> 
 </p>
 
-## 🚧 Layout 
+## 🚧 Layout
 
 #### Screenshot:
 
@@ -34,9 +34,9 @@
 
 ## 🎯 Objetivo
 
-O objetivo é a criaçao de um site de ecommerce para **administradores** onde pode ser possivel gerenciar todas as apis do site, isso inclui a criaçao, deleçao, visualizaçao, arquivamento e disponibilidade. 
+O objetivo é a criaçao de um site de ecommerce para **administradores** onde pode ser possivel gerenciar todas as apis do site, isso inclui a criaçao, deleçao, visualizaçao, arquivamento e disponibilidade.
 
-O projeto de **Ecommerce-admin** possui aplicação simples e prática para gerenciar todas as apis que incluem Stores(Lojas), Billboards(Quadros), Category(Categoria), Size(Tamanho), Color(Cor), Product(Produto), Image(Imagem), Order(Pedido), OrderItem(Item do pedido). 
+O projeto de **Ecommerce-admin** possui aplicação simples e prática para gerenciar todas as apis que incluem Stores(Lojas), Billboards(Quadros), Category(Categoria), Size(Tamanho), Color(Cor), Product(Produto), Image(Imagem), Order(Pedido), OrderItem(Item do pedido).
 
 ## ✨ Features
 
@@ -52,7 +52,7 @@ O projeto de **Ecommerce-admin** possui aplicação simples e prática para gere
 🚧 Under construction 🚧
 </div>
 
-## 🚴🏻‍♂️ Rodar o projeto 
+## 🚴🏻‍♂️ Rodar o projeto
 
 Para baixar o código-fonte do projeto em sua máquina, primeiramente terá que ter instalado o [**Git**](https://git-scm.com/).
 Com o Git instalado, em seu terminal execute o seguinte comando:
@@ -70,7 +70,9 @@ Instale as dependências usando **pnpm** ou **npm**:
 ```bash
 # pnpm
 pnpm install
+```
 
+```bash
 # npm
 npm install
 ```
@@ -86,7 +88,7 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 DATABASE_URL="Seu Banco de dados"
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="Cloudnary Key"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="Cloudinary Key"
 ```
 
 Rode o comando a seguir para gerar o client do Prisma:
@@ -94,7 +96,9 @@ Rode o comando a seguir para gerar o client do Prisma:
 ```bash
 # pnpm
 pnpm prisma generate
+```
 
+```bash
 # npm
 npm prisma generate
 ```
@@ -104,7 +108,9 @@ Execute as migrations do banco de dados:
 ```bash
 # pnpm
 pnpm prisma migrate dev
+```
 
+```bash
 # npm
 npm prisma migrate dev
 ```
@@ -121,7 +127,7 @@ npm run dev
 
 O servidor estará disponível em http://localhost:3000.
 
-## 🛠 Tecnologias 
+## 🛠 Tecnologias
 
 <div>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" height="30" width="40"/>
@@ -131,7 +137,7 @@ O servidor estará disponível em http://localhost:3000.
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
 </div>
 
-## 📜 documentation 
+## 📜 documentation
 
 <details>
     <summary>Dependencies</summary>
@@ -203,7 +209,7 @@ O servidor estará disponível em http://localhost:3000.
 - [Cloudinary | documentation](https://cloudinary.com/)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
 
-## ⚖️ License 
+## ⚖️ License
 
 This project is under the MIT license. See the archive [LICENSE](https://github.com/GabrielMedradoS/Ecommerce-admin/blob/master/LICENSE) for more details.
 
