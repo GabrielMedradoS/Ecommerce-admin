@@ -19,7 +19,7 @@
     <a href="#-features">Features</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-demonstração">Demonstração</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-documentation">Documentation</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-documentação">Documentação</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="LICENSE">License</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-autor">Autor</a> 
 </p>
@@ -137,7 +137,7 @@ O servidor estará disponível em http://localhost:3000.
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
 </div>
 
-## 📜 documentation
+## 📜 documentação
 
 <details>
     <summary>Dependencies</summary>
@@ -208,6 +208,16 @@ O servidor estará disponível em http://localhost:3000.
 - [Next Cloudinary](https://next.cloudinary.dev/installation)
 - [Cloudinary | documentation](https://cloudinary.com/)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
+
+## 💡 Como contribuir
+
+- Faça um **_fork_** desse repositório;
+- Crie um **branch** para a sua feature: `git checkout -b minha-feature`;
+- Faça um **commit** com suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça um **push** para o seu branch: `git push origin minha-feature`;
+- Faça um **pull request** com sua feature;
+
+Pull requests são sempre bem-vindos. Em caso de dúvidas ou sugestões, crie uma _**issue**_ ou entre em contato comigo.
 
 ## ⚖️ License
 
