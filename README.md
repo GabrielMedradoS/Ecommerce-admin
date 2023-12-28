@@ -34,7 +34,8 @@
 
 ## 🎯 Objetivo
 
-O objetivo é a criaçao de um site de ecommerce para **administradores** onde pode ser possivel gerenciar todas as apis do site, isso inclui a criaçao, deleçao, visualizaçao, arquivamento e disponibilidade.
+O objetivo é a criaçao de um site de ecommerce para **administradores** onde pode ser possivel gerenciar todas as apis do site, isso inclui a criaçao, deleçao, visualizaçao, arquivamento e disponibilidade.O site gerenciado pode ser encontrado no repositorio
+**Ecommerce-store**
 
 O projeto de **Ecommerce-admin** possui aplicação simples e prática para gerenciar todas as apis que incluem Stores(Lojas), Billboards(Quadros), Category(Categoria), Size(Tamanho), Color(Cor), Product(Produto), Image(Imagem), Order(Pedido), OrderItem(Item do pedido).
 
