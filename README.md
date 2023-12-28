@@ -49,9 +49,7 @@ O projeto de **Ecommerce-admin** possui aplicação simples e prática para gere
 
 ## 💻 Demonstração:
 
-<div align='center'>
-🚧 Under construction 🚧
-</div>
+https://github.com/GabrielMedradoS/Ecommerce-admin/assets/73303001/f3760ec3-93f0-491d-8f92-425d7a1530c4
 
 ## 🚴🏻‍♂️ Rodar o projeto
 
