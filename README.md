@@ -46,6 +46,8 @@ O projeto de **Ecommerce-admin** possui aplicação simples e prática para gere
 - [x] É possivel criar, deletar, atualizar os models de: Quadros, Categorias, Tamanhos, Cores, Produtos e itens do pedido para a loja
 - [x] Disponibilidade e exibiçao das apis dos models para site externos
 - [x] Metodos de requisição HTTP: POST, GET, PATCH, DELETE
+- [x] Site responsivo para tablet e mobile
+- [x] Layout de tabela para melhor visualizaçao dos itens
 
 ## 💻 Demonstração:
 
@@ -119,7 +121,9 @@ Execute o projeto:
 ```bash
 # pnpm
 pnpm run dev
+```
 
+```bash
 # npm
 npm run dev
 ```
