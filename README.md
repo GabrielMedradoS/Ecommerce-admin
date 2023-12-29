@@ -41,13 +41,14 @@ O projeto de **Ecommerce-admin** possui aplicação simples e prática para gere
 
 ## ✨ Features
 
-- [x] Autenticaçao com Clerk
+- [x] Autenticação com Clerk
 - [x] Upload de imagens usando Cloudinary
-- [x] É possivel criar, deletar, atualizar os models de: Quadros, Categorias, Tamanhos, Cores, Produtos e itens do pedido para a loja
-- [x] Geraçao de apis para todos os models: Billboard, Categories, Size, Colors, Product and Order 
-- [x] Disponibilidade e exibiçao das apis dos models para site externos
-- [x] Metodos de requisição HTTP: POST, GET, PATCH, DELETE
-- [x] Layout de tabela para melhor visualizaçao dos itens
+- [x] Checkout de pagamentos usando o Stripe
+- [x] É possível criar, deletar, atualizar os models de: Quadros, Categorias, Tamanhos, Cores, Produtos e itens do pedido para a loja
+- [x] Geração de apis para todos os models: Billboard, Categories, Size, Colors, Product and Order
+- [x] Disponibilidade e exibição das apis dos models para site externos
+- [x] Métodos de requisição HTTP: POST, GET, PATCH, DELETE
+- [x] Layout de tabela para melhor visualização dos itens
 - [x] Site responsivo para tablet e mobile
 
 ## 💻 Demonstração:
@@ -91,6 +92,8 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 DATABASE_URL="Seu Banco de dados"
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="Cloudinary Key"
+STRIPE_KEY="Sua chave secreta do Stripe"
+FRONTEND_STORE_URL="URL principal da sua loja"
 ```
 
 Rode o comando a seguir para gerar o client do Prisma:
@@ -161,21 +164,28 @@ O servidor estará disponível em http://localhost:3000.
     "@clerk/nextjs": "^4.27.2",
     "@hookform/resolvers": "^3.3.2",
     "@prisma/client": "^5.6.0",
+    "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-popover": "^1.0.7",
+    "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@tanstack/react-table": "^8.11.0",
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
+    "date-fns": "^3.0.0",
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
+    "next-cloudinary": "^5.11.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.48.2",
     "react-hot-toast": "^2.4.1",
+    "stripe": "^14.10.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4",
@@ -212,6 +222,7 @@ O servidor estará disponível em http://localhost:3000.
 - [Next Cloudinary](https://next.cloudinary.dev/installation)
 - [Cloudinary | documentation](https://cloudinary.com/)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
+- [Stripe | documentation](https://stripe.com/docs/payments/checkout) : ao usar o Webhooks é preciso Baixar a CLI do Stripe
 
 ## 💡 Como contribuir
 
