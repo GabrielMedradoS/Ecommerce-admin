@@ -222,7 +222,7 @@ O servidor estará disponível em http://localhost:3000.
 - [Next Cloudinary](https://next.cloudinary.dev/installation)
 - [Cloudinary | documentation](https://cloudinary.com/)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
-- [Stripe | documentation](https://stripe.com/docs/payments/checkout)
+- [Stripe | documentation](https://stripe.com/docs/payments/checkout) : ao usar o Webhooks é preciso Baixar a CLI do Stripe
 
 ## 💡 Como contribuir
 
