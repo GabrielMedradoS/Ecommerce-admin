@@ -24,7 +24,7 @@
     <a href="#-autor">Autor</a> 
 </p>
 
-## 🚧 Layout
+## 📷 Layout
 
 #### Screenshot:
 
@@ -66,25 +66,6 @@ Com o Git instalado, em seu terminal execute o seguinte comando:
 git clone https://github.com/GabrielMedradoS/Ecommerce-admin.git
 ```
 
-Para testar o projeto em sua máquina Baixe a CLI [**Stripe**](https://stripe.com/docs/stripe-cli).
-Faça login em seu terminal usando o seguinte comando:
-
-```bash
-stripe login
-```
-
-Encaminhe eventos ao seu webhook
-
-```bash
-stripe listen --forward-to localhost:3000/api/webhook
-```
-
-Acione eventos com a CLI
-
-```bash
-stripe trigger payment_intent.succeeded
-```
-
 Para instalar as dependências e executar o projeto terá que ter instalado em sua máquina o [**node.js**](https://nodejs.org/en/), que vem acompanhado do npm.
 
 > Nesse projeto foi utilizado o [**pnpm**](https://pnpm.io/), que busca economizar espaço em disco e acelerar a instalação de pacotes devido à sua abordagem de armazenamento de dependências compartilhado.
@@ -99,6 +80,24 @@ pnpm install
 ```bash
 # npm
 npm install
+```
+
+Baixe a CLI [**Stripe**](https://stripe.com/docs/stripe-cli) e faça login em seu terminal usando o seguinte comando:
+
+```bash
+stripe login
+```
+
+Encaminhe eventos ao seu webhook:
+
+```bash
+stripe listen --forward-to localhost:3000/api/webhook
+```
+
+Acione eventos com a CLI:
+
+```bash
+stripe trigger payment_intent.succeeded
 ```
 
 Crie o arquivo .env com as variáveis de ambiente necessárias:
@@ -235,7 +234,7 @@ O servidor estará disponível em http://localhost:3000.
 - [Tailwind | documentation](https://tailwindcss.com/docs/installation/using-postcss)
 - [Clerk Authentication](https://clerk.com/)
 - [PlanetScale | documentation](https://planetscale.com/)
-- [Stripe | documentation](https://stripe.com/docs/payments/checkout) : ao usar o Webhooks é preciso Baixar a CLI do Stripe
+- [Stripe | documentation](https://stripe.com/docs/payments/checkout) -> ao usar o Webhooks é preciso Baixar a CLI do Stripe
 - [Prisma.io | documentation](https://www.prisma.io/docs/getting-started/quickstart)
 - [Next Cloudinary](https://next.cloudinary.dev/installation)
 - [Cloudinary | documentation](https://cloudinary.com/)
