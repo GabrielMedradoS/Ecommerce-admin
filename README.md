@@ -34,18 +34,20 @@
 
 ## 🎯 Objetivo
 
-O objetivo é a criaçao de um site de ecommerce para **administradores** onde pode ser possivel gerenciar todas as apis do site, isso inclui a criaçao, deleçao, visualizaçao, arquivamento e disponibilidade. O site gerenciado pode ser encontrado no repositorio
+O objetivo é a criação de um site de ecommerce para **administradores** onde pode ser possível gerenciar todas as apis do site, isso inclui a criação, deleção, visualização, arquivamento e disponibilidade. O site gerenciado pode ser encontrado no repositório
 **Ecommerce-store**.
 
-O projeto de **Ecommerce-admin** possui aplicação simples e prática para gerenciar todas as apis que incluem Stores(Lojas), Billboards(Quadros), Category(Categoria), Size(Tamanho), Color(Cor), Product(Produto), Image(Imagem), Order(Pedido), OrderItem(Item do pedido).
+O projeto de **Ecommerce-admin** possui aplicação simples e prática para gerenciar todas as apis que incluem Stores(Lojas), Billboards(Quadros), Category(Categoria), Size(Tamanho), Color(Cor), Product(Produto), Image(Imagem), Order(Pedido), OrderItem(Item do pedido) e também consiste em gerenciar o sita da loja principal incluindo o pagamento que é atualizado na aba de pedidos, nele é possível encontrar o item do pedido, celular, Endereço, Preço do produto e se foi pago
 
 ## ✨ Features
 
 - [x] Autenticação com Clerk
 - [x] Upload de imagens usando Cloudinary
 - [x] Checkout de pagamentos usando o Stripe
+- [x] Banco de dados usando o PlanetScale para gravar o banco dados
 - [x] É possível criar, deletar, atualizar os models de: Quadros, Categorias, Tamanhos, Cores, Produtos e itens do pedido para a loja
 - [x] Geração de apis para todos os models: Billboard, Categories, Size, Colors, Product and Order
+- [x] Atualização de pedidos e itens do pedido na hora do pagamento: Endereço, telefone, celular
 - [x] Disponibilidade e exibição das apis dos models para site externos
 - [x] Métodos de requisição HTTP: POST, GET, PATCH, DELETE
 - [x] Layout de tabela para melhor visualização dos itens
@@ -62,6 +64,25 @@ Com o Git instalado, em seu terminal execute o seguinte comando:
 
 ```bash
 git clone https://github.com/GabrielMedradoS/Ecommerce-admin.git
+```
+
+Para testar o projeto em sua máquina Baixe a CLI [**Stripe**](https://stripe.com/docs/stripe-cli).
+Faça login em seu terminal usando o seguinte comando:
+
+```bash
+stripe login
+```
+
+Encaminhe eventos ao seu webhook
+
+```bash
+stripe listen --forward-to localhost:3000/api/webhook
+```
+
+Acione eventos com a CLI
+
+```bash
+stripe trigger payment_intent.succeeded
 ```
 
 Para instalar as dependências e executar o projeto terá que ter instalado em sua máquina o [**node.js**](https://nodejs.org/en/), que vem acompanhado do npm.
@@ -90,10 +111,11 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-DATABASE_URL="Seu Banco de dados"
+DATABASE_URL="Seu Banco de dados, no caso estou usando PlanetScale"
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="Cloudinary Key"
 STRIPE_KEY="Sua chave secreta do Stripe"
 FRONTEND_STORE_URL="URL principal da sua loja"
+STRIPE_WEBHOOK_SECRET="Webhook secret key disponibilizada pelo stripe"
 ```
 
 Rode o comando a seguir para gerar o client do Prisma:
@@ -108,16 +130,16 @@ pnpm prisma generate
 npm prisma generate
 ```
 
-Execute as migrations do banco de dados:
+Execute o comando para enviar ao PlanetScale ou outro banco:
 
 ```bash
 # pnpm
-pnpm prisma migrate dev
+pnpm prisma db push
 ```
 
 ```bash
 # npm
-npm prisma migrate dev
+npm prisma db push
 ```
 
 Execute o projeto:
@@ -212,17 +234,17 @@ O servidor estará disponível em http://localhost:3000.
 - [Shadcn/ui | documentation](https://ui.shadcn.com/docs/installation/vite)
 - [Tailwind | documentation](https://tailwindcss.com/docs/installation/using-postcss)
 - [Clerk Authentication](https://clerk.com/)
+- [PlanetScale | documentation](https://planetscale.com/)
+- [Stripe | documentation](https://stripe.com/docs/payments/checkout) : ao usar o Webhooks é preciso Baixar a CLI do Stripe
+- [Prisma.io | documentation](https://www.prisma.io/docs/getting-started/quickstart)
+- [Next Cloudinary](https://next.cloudinary.dev/installation)
+- [Cloudinary | documentation](https://cloudinary.com/)
 - [Zustand | documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
 - [Zod | documentation](https://zod.dev/)
-- [Prisma.io | documentation](https://www.prisma.io/docs/getting-started/quickstart)
-- [PlanetScale | documentation](https://planetscale.com/)
 - [React Hot Toast](https://react-hot-toast.com/)
 - [Axios | documentation](https://axios-http.com/ptbr/docs/intro)
 - [React Hook Form](https://www.react-hook-form.com/get-started)
-- [Next Cloudinary](https://next.cloudinary.dev/installation)
-- [Cloudinary | documentation](https://cloudinary.com/)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
-- [Stripe | documentation](https://stripe.com/docs/payments/checkout) : ao usar o Webhooks é preciso Baixar a CLI do Stripe
 
 ## 💡 Como contribuir
 
