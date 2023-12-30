@@ -244,6 +244,7 @@ O servidor estará disponível em http://localhost:3000.
 - [Axios | documentation](https://axios-http.com/ptbr/docs/intro)
 - [React Hook Form](https://www.react-hook-form.com/get-started)
 - [Date-fns | documentation](https://www.npmjs.com/package/date-fns)
+- [Recharts | documentation](https://www.npmjs.com/package/recharts)
 
 ## 💡 Como contribuir
 
