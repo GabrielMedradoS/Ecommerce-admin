@@ -52,6 +52,7 @@ O projeto de **Ecommerce-admin** possui aplicação simples e prática para gere
 - [x] Métodos de requisição HTTP: POST, GET, PATCH, DELETE
 - [x] Layout de tabela para melhor visualização dos itens
 - [x] Site responsivo para tablet e mobile
+- [x] Dark Mode
 
 ## 💻 Demonstração:
 
