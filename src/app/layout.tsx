@@ -11,8 +11,8 @@ import { ThemeProvider } from "@/providers/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "E-commerce GMS",
-  description: "E-commerce GMS",
+  title: "E-commerce admin GMS",
+  description: "E-commerce admin GMS",
 };
 
 export default function RootLayout({
