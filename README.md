@@ -158,13 +158,7 @@ O servidor estará disponível em http://localhost:3000.
 
 ## 🛠 Tecnologias
 
-<div>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" height="30" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-  alt="typescript" height="30" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" height="30" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
-</div>
+![My Skills](https://skillicons.dev/icons?i=ts,react,nodejs,tailwind)
 
 ## 📜 documentação
 
