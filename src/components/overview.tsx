@@ -14,8 +14,8 @@ export const Overview: React.FC<OverviewProps> = ({ data }) => {
           dataKey={"name"}
           stroke="#888888"
           fontSize={12}
-          tickLine={false}
-          axisLine={false}
+          tickLine={true}
+          axisLine={true}
         />
         <YAxis
           stroke="#888888"
