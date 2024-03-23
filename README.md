@@ -263,5 +263,9 @@ This project is under the MIT license. See the archive [LICENSE](https://github.
 | :-------------------------: |
 | <a href="https://github.com/gabrielmedrados/"> Gabriel Medrado |</a> |
 
+| <a href="https://github.com/Rhuan-Gonzaga"><img src="https://avatars.githubusercontent.com/u/62728188?v=4" width="100" alt="perfil"/><br>
+| :-------------------------: |
+| <a href="https://github.com/Rhuan-Gonzaga"> Rhuan Gonzaga |</a> |
+
 [![Linkedin Badge](https://img.shields.io/badge/-GabrielMedrado-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-medrado-de-souza-9a30b3206/)
 [![Gmail Badge](https://img.shields.io/badge/-gabriel.medradoo@hotmail.com-1769ff?style=flat-square&logo=Gmail&logoColor=white)](mailto:gabriel.medradoo@hotmail.com)
