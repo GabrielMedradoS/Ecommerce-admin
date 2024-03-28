@@ -30,7 +30,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
 
   const onCopy = (id: string) => {
     navigator.clipboard.writeText(id);
-    toast.success("Painel ID copiado para a área de transferência");
+    toast.success("Painel ID copiado.");
   };
 
   const onDelete = async () => {
@@ -38,7 +38,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
       setLoading(true);
       await axios.delete(`/api/${params.storeId}/billboards/${data.id}`);
       router.refresh();
-      toast.success("Painel deletado.");
+      toast.success("Painel removido.");
     } catch (error) {
       toast.error(
         "Certifique-se de remover todas as categorias usando este painel primeiro."
@@ -80,7 +80,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => setOpen(true)}>
             <Trash className="mr-2 h-4 w-4" />
-            Deletar
+            remover
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
