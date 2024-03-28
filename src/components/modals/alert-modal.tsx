@@ -28,7 +28,7 @@ export const AlertModal: React.FC<AlertModalProps> = ({
   return (
     <Modal
       title="Tem certeza ?"
-      description="Essa ação nao pode ser desfeita"
+      description="Essa ação não pode ser desfeita"
       isOpen={isOpen}
       onClose={onClose}
     >

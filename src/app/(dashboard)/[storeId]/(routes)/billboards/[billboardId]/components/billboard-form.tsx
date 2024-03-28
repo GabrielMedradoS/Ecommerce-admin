@@ -87,10 +87,10 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
       );
       router.push(`/${params.storeId}/billboards`);
       router.refresh();
-      toast.success("Billboard deleted.");
+      toast.success("Painel removido.");
     } catch (error) {
       toast.error(
-        "Make sure you removed all categories using this billboard first."
+        "Certifique-se de remover todas as categorias usando este painel primeiro."
       );
     } finally {
       setLoading(false);
