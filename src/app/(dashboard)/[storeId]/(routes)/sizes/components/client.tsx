@@ -27,7 +27,7 @@ export const SizeClient: React.FC<SizeClientProps> = ({ data }) => {
           description="Gerencie tamanhos para sua loja"
         />
         <Button onClick={() => router.push(`/${params.storeId}/sizes/new`)}>
-          <Plus className="mr-2 h-4 w-4" /> Adicione
+          <Plus className="mr-2 h-4 w-4" /> Adicionar
         </Button>
       </div>
       <Separator />
