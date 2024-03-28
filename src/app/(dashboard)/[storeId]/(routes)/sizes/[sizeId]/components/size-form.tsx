@@ -42,10 +42,10 @@ export const SizeForm: React.FC<SizeFormProps> = ({ initialData }) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const title = initialData ? "Edit size" : "Create size";
-  const description = initialData ? "Edit size" : "Add new size";
-  const toastMessage = initialData ? "Size updated." : "Size created.";
-  const action = initialData ? "Save changes" : "Create";
+  const title = initialData ? "Editar tamanho" : "Criar tamanho";
+  const description = initialData ? "Editar tamanho" : "Adicionar tamanho";
+  const toastMessage = initialData ? "Tamanho atualizado." : "Tamanho criado.";
+  const action = initialData ? "Salvar mudanças" : "Criar";
 
   const form = useForm<SizeFormValues>({
     resolver: zodResolver(formSchema),
@@ -82,9 +82,11 @@ export const SizeForm: React.FC<SizeFormProps> = ({ initialData }) => {
       await axios.delete(`/api/${params.storeId}/sizes/${params.sizeId}`);
       router.push(`/${params.storeId}/sizes`);
       router.refresh();
-      toast.success("Size deleted.");
+      toast.success("Tamanho removido.");
     } catch (error) {
-      toast.error("Make sure you removed all products using this size first.");
+      toast.error(
+        "Certifique-se de remover todos os produtos usando este tamanho primeiro."
+      );
     } finally {
       setLoading(false);
       setOpen(false);
@@ -125,11 +127,11 @@ export const SizeForm: React.FC<SizeFormProps> = ({ initialData }) => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Nome</FormLabel>
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Size name"
+                      placeholder="Nome do tamanho"
                       {...field}
                     />
                   </FormControl>
@@ -142,11 +144,11 @@ export const SizeForm: React.FC<SizeFormProps> = ({ initialData }) => {
               name="value"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Value</FormLabel>
+                  <FormLabel>Valor</FormLabel>
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Size value"
+                      placeholder="Valor do tamanho"
                       {...field}
                     />
                   </FormControl>

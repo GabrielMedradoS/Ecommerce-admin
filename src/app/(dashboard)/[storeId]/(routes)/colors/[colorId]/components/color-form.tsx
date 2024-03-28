@@ -44,10 +44,10 @@ export const ColorForm: React.FC<ColorFormProps> = ({ initialData }) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const title = initialData ? "Edit color" : "Create color";
-  const description = initialData ? "Edit color" : "Add new color";
-  const toastMessage = initialData ? "Color updated." : "Color created.";
-  const action = initialData ? "Save changes" : "Create";
+  const title = initialData ? "Editar cor" : "Criar cor";
+  const description = initialData ? "Editar cor" : "Adicionar cor";
+  const toastMessage = initialData ? "Cor atualizada." : "Cor criada.";
+  const action = initialData ? "Salvar mudanças" : "Criar";
 
   const form = useForm<ColorFormValues>({
     resolver: zodResolver(formSchema),
@@ -84,9 +84,11 @@ export const ColorForm: React.FC<ColorFormProps> = ({ initialData }) => {
       await axios.delete(`/api/${params.storeId}/colors/${params.colorId}`);
       router.push(`/${params.storeId}/colors`);
       router.refresh();
-      toast.success("Color deleted.");
+      toast.success("Cor removida.");
     } catch (error) {
-      toast.error("Make sure you removed all products using this color first.");
+      toast.error(
+        "Certifique-se de remover todos os produtos usando esta cor primeiro."
+      );
     } finally {
       setLoading(false);
       setOpen(false);
@@ -127,11 +129,11 @@ export const ColorForm: React.FC<ColorFormProps> = ({ initialData }) => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Nome</FormLabel>
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Color name"
+                      placeholder="Nome da cor"
                       {...field}
                     />
                   </FormControl>
@@ -144,12 +146,12 @@ export const ColorForm: React.FC<ColorFormProps> = ({ initialData }) => {
               name="value"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Value</FormLabel>
+                  <FormLabel>Valor</FormLabel>
                   <FormControl>
                     <div className="flex items-center gap-x-4">
                       <Input
                         disabled={loading}
-                        placeholder="Color value"
+                        placeholder="Valor da cor"
                         {...field}
                       />
                       <div
