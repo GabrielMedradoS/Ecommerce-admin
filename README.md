@@ -159,6 +159,12 @@ O servidor estará disponível em http://localhost:3000.
 
 ## 🛠 Tecnologias
 
+### Workflow:
+
+<div align='center'>
+<img src=".github/workflow.png">
+</div>
+
 ![My Skills](https://skillicons.dev/icons?i=ts,react,nodejs,tailwind)
 
 ## 📜 documentação
