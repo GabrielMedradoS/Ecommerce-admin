@@ -29,7 +29,7 @@
 #### Screenshot:
 
 <div align='center'>
-<img src=".github/Product image.png">
+<img src=".github/github image.png">
 </div>
 
 ## 🎯 Objetivo
