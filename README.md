@@ -29,7 +29,7 @@
 #### Screenshot:
 
 <div align='center'>
-<img src=".github/Product image admin.png">
+<img src=".github/Product image.png">
 </div>
 
 ## 🎯 Objetivo
@@ -275,8 +275,6 @@ This project is under the MIT license. See the archive [LICENSE](https://github.
     </td>
   </tr>
 </table>
-
-
 
 [![Linkedin Badge](https://img.shields.io/badge/-GabrielMedrado-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-medrado-de-souza-9a30b3206/)
 [![Gmail Badge](https://img.shields.io/badge/-gabriel.medradoo@hotmail.com-1769ff?style=flat-square&logo=Gmail&logoColor=white)](mailto:gabriel.medradoo@hotmail.com)
